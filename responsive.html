@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size units</title>
+    <style>
+        html{
+            font-size: 25px;
+            border: 2px solid palevioletred;
+            /* height: 300px; */
+            /* height: 100vh; will take the height of the entire page */
+            /* width:400px; */
+            /* width: 100vw; will take the width of the entire page */
+        }
+        .container{
+            font-size: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        #item-1{
+           /* font-size: 4em;  (this means item-1 will have font size 4*container font size)
+           padding: 3em; (this means item-1 will have padding 3*(it's own computed font size)) */
+        }
+        #item-2{
+            /*font-size: 4rem;  (this means item-2 will have font size 4*html font size) */
+            /*padding: 3rem; (this means item-2 will have padding 3*(html font size)) */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="item-1">This is first heading</h1>
+        <h1 id="item-2">This is second heading</h1>
+        <h1 id="item-3">This is third heading</h1>
+    </div>
+</body>
+</html>

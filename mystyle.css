@@ -1,0 +1,29 @@
+hr+p{
+    color: hotpink;
+    font-weight: 800;
+}
+li
+{
+    list-style: lower-greek;
+}
+
+li em{
+    color: indigo;
+    font-weight: bold;
+    text-shadow: 1rem;
+}
+
+a:hover{
+    color:aquamarine;
+}
+body hr+p .special
+{
+    color: gold;
+    background-color: black;
+    size: 5px;
+}
+.special
+{
+    color: coral;
+    font-weight: bold;
+}

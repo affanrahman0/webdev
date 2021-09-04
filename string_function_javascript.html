@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = 'This is a string';
+        console.log(str);
+        
+        var position = str.indexOf('is'); //first occurence
+        console.log(position);
+        
+        position = str.lastIndexOf('is'); //last occurence
+        console.log(position);
+        
+        var substring= str.slice(1,6); // it takes first index and last index
+        console.log(substring);
+        
+        substring= str.substr(1,6); // it takes first index and length to be copied
+        console.log(substring);
+
+        var replaced = str.replace('a string','an array'); // it takes part of the string to be replaced and the   part to be replaced with
+        console.log(str);
+        console.log(replaced);
+
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+
+        var newstring =  str.concat(" and it's a new one");
+        console.log(newstring);
+        
+        var whitespaces= "          helloooo   how are you doing        ";
+        console.log(whitespaces);
+        console.log(whitespaces.trim());// removes white spaces only from the begining and end
+        
+        var character =str.charAt(2);
+        console.log(character);
+        console.log(str.charCodeAt(2)); //returns ascii
+    </script>    
+</body>
+</html>

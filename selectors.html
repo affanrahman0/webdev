@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        div+h1{
+            color: aqua;
+            background-color: blueviolet;
+        }/* here h1 has to be the next sibling of div   */
+        div > p{
+            color: rgb(0, 255, 64);
+            background-color: rgb(221, 212, 219);
+        } /* here p has to be the direct child of div   */
+    </style>
+</head>
+<body>
+    <h1>hey there!</h1>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sequi qui id porro exercitationem laborum, dolorem cupiditate itaque veniam maiores, blanditiis dolorum dignissimos eos ullam. Vitae reiciendis eos harum tenetur!</p>
+        <li><p>hello nice to meet you</p></li>
+    </div>
+    <h1>hello man</h1>
+</body>
+</html>

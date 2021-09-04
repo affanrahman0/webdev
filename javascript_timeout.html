@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set timeout</title>
+    <style>
+        #time{
+            background-color: indianred;
+            color: rgb(171, 221, 221);
+            padding: 4px 4px;
+            border: 2px solid grey;
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <span id="time"></span>
+    </div>
+    <script>
+        console.log("hey there");
+        // setTimeout --> Allows us to run the function for once after the interval of time
+        // setInterval --> Allows us to run the function repeatedly after the interval of time
+        function greet(name,text)
+        {
+            console.log("I'm happy for you "+ name + " "+ text);
+        }
+        // timeout=setTimeout(greet,5000,"Affan", "hope you have a great day") //this is not calling the greet function, its only taking the function name as a parameter 
+        // console.log(timeout);
+        // clearTimeout(timeout);
+
+        // intervalId=setInterval(greet,2000,"Affan",".Have a great day");
+        // clearInterval(intervalId);
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime,1000);
+    </script>
+</body>
+</html>

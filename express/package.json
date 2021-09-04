@@ -1,0 +1,16 @@
+{
+  "name": "express_learn",
+  "version": "1.0.0",
+  "description": "This is a package created while learning express ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Affan Rahman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "pug": "^3.0.2"
+  }
+}

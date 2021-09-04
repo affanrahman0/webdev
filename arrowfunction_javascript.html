@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <div class="container">
+        Nice to meet you
+    </div>
+    <script>
+        // function greet(){
+        //     console.log("welcome to this new world");
+        // }
+        
+        //Arrow function
+        // greet = () => {
+        //     console.log("welcome to this new world");
+        // }
+        // greet = () => console.log("welcome to this new world");
+        
+        // greet()
+
+        // sum = (a,b) => {
+        //    return a+b;
+        // }
+        
+        // sum =(a,b) => a+b;
+        // let s = sum(1,3);
+        // console.log(s);
+
+        // half = a =>a/2; //for one argument shortcut
+
+        // setTimeout(() => {
+        //     console.log("The road not taken looks real good now\n")
+        // }, 3000);
+
+        let obj = {
+            names : ["jonah", "jerren","Ramona", "Elanor"],
+            greetings :"see you soon",
+            func(){    //Since 'this' is not declared as a function , so 'this' refers to its parents
+                this.names.forEach((students) =>{
+                    console.log("Good bye "+ students + " "+this.greetings);
+                });
+            }
+        }
+        obj.func();
+    </script>
+</body>
+</html>

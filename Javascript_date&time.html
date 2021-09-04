@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data & time</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        // let now = new Date();
+        // console.log(now);
+
+
+        // console.log(now);
+        // let now = new Date(0); //starting
+
+       //let now = new Date(year,month,date,hours,minutes,seconds,miliseconds); 
+       let now = new Date(2050,1,7,7,8,8,2000); 
+       console.log(now);
+
+       let year =now.getFullYear();
+       console.log(year);
+
+       let dt =now.getDate();
+       console.log(dt);
+
+       let month =now.getMonth();
+       console.log(month);
+
+       let hrs =now.getHours();
+       console.log(hrs);
+    
+       now.setDate(2);
+       console.log(now);
+
+    </script>
+</body>
+</html>

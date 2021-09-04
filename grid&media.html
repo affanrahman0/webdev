@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+        }
+        @media (max-width:300px)
+        {
+            body{
+                background-color: bisque;
+            }
+        }
+        @media (max-width:800px) and (min-width:500px)
+        {
+            body{
+                background-color: rgb(112, 192, 175);
+            }
+            .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            }
+        }
+        @media (max-width:500px) and (min-width:300px)
+        {
+            body{
+                background-color: blue;
+            }
+            .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'footer footer footer footer'
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media (max-width:1000px) and (min-width:800px)
+        {
+            body{
+                background-color: rgb(194, 139, 173);
+            }
+        }
+        @media (min-width:1000px)
+        {
+            body{
+                background-color: rgb(90, 5, 62);
+            }
+        }
+        .bdr{
+            border: 3px solid rgb(4, 74, 83);
+            padding: 34px;
+            background-color: azure;
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section
+        {
+            grid-area: section;
+        }
+        aside
+        {
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+           <span>Home </span>
+           <span>Services</span>
+           <span>Contact us</span>
+        </nav>
+        <section class="bdr">
+            <h2>Welcome to this new world</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis neque eum. Laboriosam minima ut doloremque error illum similique suscipit, aliquid voluptates mollitia culpa quas consequatur tempore, quae nostrum sed ratione commodi veritatis ex sint facilis quos, dolorum deserunt Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat magnam dolor sit, obcaecati delectus minima eos aperiam id, quam ullam culpa aspernatur suscipit quo autem nemo harum soluta. Fuga reprehenderit nihil deleniti commodi architecto eligendi fugit. Laborum, nobis autem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic ullam delectus dolorum exercitationem explicabo reiciendis magni, debitis quisquam commodi. Et est molestias alias, debitis neque aperiam reiciendis adipisci, asperiores, explicabo mollitia doloremque. Blanditiis vero facere voluptates vitae nobis sequi id.</p>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyrights!!</footer>
+</body>
+</html>

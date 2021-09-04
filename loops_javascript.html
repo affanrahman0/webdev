@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    <div class="container">
+        hey there
+    </div>
+    <script>
+        let arr = [5,8,9,4,3];
+        let a=0;
+        //loop
+        arr.forEach(function f(element){
+            a+= element;
+        })
+        console.log(a);
+
+        //another way of using for loop
+        for(element of arr)
+        {
+            a+= element;
+        }
+        console.log(a);
+
+        // for loops for objects
+        let employee = {
+            name : "Affan",
+            salary : 20,
+            Age : 19
+        }
+
+        for(key in employee)
+        {
+            console.log(`The ${key} of the employee is ${employee[key]}`);
+        }
+    </script>
+</body>
+</html>
